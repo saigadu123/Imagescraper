@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    
+    <style>
+        h1{
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            background-color: #a37f3c;
+            margin-top: 0px;
+            padding: 20px;
+        }
+        .container{
+            text-align: center;
+            padding-top: 100px;
+        }
+        .form{
+            border: 1px solid black;
+            height:150px;
+            padding: 40px;
+            margin-left: 400px;
+            margin-right: 400px;
+            background-color: #2848c7;
+            border-radius: 5px;
+        }
+        #search-label{
+            font-size: 20px;
+            color: #ffffff;
+            margin: 10px;
+        }
+        #search{
+            height: 20px;
+            width: 180px;
+            border-color: black;
+        }
+        #count-label{
+            font-size: 20px;
+            color: #ffffff;
+            margin: 10px;
+        }
+        #count{
+            height: 20px;
+            width: 180px;
+            border-color: black;
+        }
+        #submit{
+            background-color: #3bd433;
+            color: #ffffff;
+            height: 30px;
+            width: 200px;
+            margin-top: 30px;
+            border-radius: 7px;
+        }
+        #submit:hover{
+            background-color: #0f8209;
+
+        }
+    </style>
+</head>
+<body style="background-color:#dece43;margin:0;">
+    <h1>Image Scrapping Tool</h1>
+    <div class="container">
+        <div class="form">
+            <form action="/Imagescraper" method="POST">
+                <label for="search" id="search-label">Search Images :</label>
+                <input type="text" name="search" id="search" placeholder="Search here">
+                 <br><br>
+                <label for="count" id="count-label">No of Images : </label>
+                <input type="text" name="count" id="count" placeholder="No of Images">
+                <br><br>
+                <input type="submit" id="submit" value="search">
+            </form>
+           
+        </div>
+    <h1 style="color: red; margin:40px;line-height: normal;background-color:#dece43;">You can view the images in images folder Thank you!</h1>
+    </div>
+</body>
+</html>
